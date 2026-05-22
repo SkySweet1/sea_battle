@@ -1,10 +1,6 @@
 #pragma once
 #include "types.h"
-#include <random>
 
-struct Bot{
-
-};
-
-Point GetBotShot(); // Функция которая отдает координаты выстрела бота
-void SetBotResult(Result result); // Функция, которая говорит боту результат выстрела
+void InitBot();                         // Функция, которая инициализирует бота, например, может сбросить его внутреннее состояние
+Point GetBotShot();                     // Функция которая отдает координаты выстрела бота
+void SetBotResult(Result result);       // Функция, которая говорит боту результат выстрела
